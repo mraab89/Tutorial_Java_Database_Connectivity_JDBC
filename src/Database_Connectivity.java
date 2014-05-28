@@ -27,11 +27,15 @@ public class Database_Connectivity {
 				// display table content
 				System.out.println(res.getString(1) + " " + res.getString(2) + " " + res.getInt(3));
 				
-			}
+				}
+		
+			// close procedures
+			res.close();
+			stmt.close();
+			databaseConnection.close();
+		
 		}
-		
-		//TODO close procedures
-		
+				
 		catch(Exception e){
 			
 			// failure message
