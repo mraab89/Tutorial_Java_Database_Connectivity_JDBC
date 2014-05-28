@@ -10,8 +10,9 @@ public class Database_Connectivity {
 			// initialize Driver
 			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			
-			//TODO database connection (URL/User/password)
-			
+			// database connection ("URL or Path of the database", "User", "password")
+			Connection databaseConnection = DriverManager.getConnection("jdbc:mysql://localhost/ePortfolio","root","");
+						
 			//TODO Connection setReadOnly
 			
 			//TODO Objects
