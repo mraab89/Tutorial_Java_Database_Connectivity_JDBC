@@ -7,15 +7,24 @@ public class Database_Connectivity {
 		
 		try{
 			
-			//initialize Driver
+			// initialize Driver
 			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			
+			//TODO database connection (URL/User/password)
 			
+			//TODO Connection setReadOnly
+			
+			//TODO Objects
+			
+			//TODO execute SQL-Command
 		}
 		
-		catch(){
+		//TODO close procedures
+		
+		catch(Exception e){
 			
-			//TODO failure message
+			// failure message
+			System.out.println(" **** FAILURE **** " + e);
 		}
 	}
 	
