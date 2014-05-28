@@ -21,7 +21,13 @@ public class Database_Connectivity {
 			
 			ResultSet res = stmt.executeQuery("Select * from student");
 			
-			//TODO execute SQL-Command
+			// execute SQL-Command
+			while(res.next()){
+				
+				// display table content
+				System.out.println(res.getString(1) + " " + res.getString(2) + " " + res.getInt(3));
+				
+			}
 		}
 		
 		//TODO close procedures
