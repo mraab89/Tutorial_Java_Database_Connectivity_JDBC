@@ -13,9 +13,13 @@ public class Database_Connectivity {
 			// database connection ("URL or Path of the database", "User", "password")
 			Connection databaseConnection = DriverManager.getConnection("jdbc:mysql://localhost/ePortfolio","root","");
 						
-			//TODO Connection setReadOnly
+			// Connection setReadOnly
+			databaseConnection.setReadOnly(true);
 			
-			//TODO Objects
+			// Objects
+			Statement stmt = databaseConnection.createStatement();
+			
+			ResultSet res = stmt.executeQuery("Select * from student");
 			
 			//TODO execute SQL-Command
 		}
